@@ -13,7 +13,7 @@ const port = 3001;
 
 // Sets up an Express application and configures CORS to allow requests from a frontend hosted at http://localhost:3000
 const corsOptions = {
-  origin: 'https://typeracer712.netlify.app',
+  origin: 'http://localhost:3000',
   methods: 'GET,POST',
   credentials: true,
 };
@@ -43,7 +43,7 @@ const server = app.listen(port, () => {
 
 const io = socketio(server, {
   cors: {
-    origin: 'https://typeracer712.netlify.app',
+    origin: 'http://localhost:3000',
     methods: ['GET', 'POST'],
     credentials: true 
   }
