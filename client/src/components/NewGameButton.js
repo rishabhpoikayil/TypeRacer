@@ -1,11 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const NewGameButton = () => {
-  const navigate = useNavigate();
-
   const handleNewGame = () => {
-    navigate('https://typeracer-phoenix.netlify.app');
+    window.location.href = 'https://typeracer-phoenix.netlify.app'; // Navigate to the home page
   };
 
   return (
