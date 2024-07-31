@@ -1,13 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const NewGameButton = () => {
+  const navigate = useNavigate();
 
-  const handleClick = () => {
-    window.location.reload()
+  const handleNewGame = () => {
+    navigate('https://typeracer-phoenix.netlify.app');
   };
 
   return (
-    <button onClick={handleClick} className="btn btn-secondary mb-3">
+    <button onClick={handleNewGame} className="btn btn-secondary mb-3">
       New Game
     </button>
   );
