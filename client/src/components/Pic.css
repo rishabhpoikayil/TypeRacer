@@ -1,0 +1,14 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.resized-image {
+  max-width: 100%; 
+  height: auto;   
+  width: 80%;     
+  border: 2px solid #000; 
+  border-radius: 8px;
+}
